@@ -1,0 +1,249 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Poppins",  sans-serif;
+
+}
+header
+{
+    background-image: url("3.png");
+    background-size: cover;
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    
+    
+    align-items: center;
+    
+    
+}   
+a
+{
+    display: inline-block;
+    position: relative;
+    padding: 10px 30px;
+    margin: 0 15px;
+    color: #21ebff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0003);
+    flex-wrap: wrap;
+
+} 
+a:nth-child(1)
+{
+    filter: hue-rotate(115deg);
+   
+}
+a:nth-child(3)
+{
+    filter: hue-rotate(270deg);
+}
+a:hover
+{
+    background: #21ebff;
+    color: #111;
+    box-shadow: 0 0 50px #21ebff;
+    transition-delay: 0.5s;
+    
+}
+a:before
+{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0; 
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    overflow: hidden;
+}
+a:hover::before
+{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+
+} 
+a::after
+{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0; 
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    overflow: hidden;
+} 
+a:hover::after
+{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+.lien
+{
+  
+  display: block;
+   margin-left: 500px;
+   margin-top: 20px;
+   flex-wrap: wrap;
+   
+}
+.ban
+{   
+    max-height: 100%;
+    height: 100px;
+}
+.haut
+{
+   width: 100%;
+    display: flex;
+    margin-bottom: auto;
+   
+    flex-wrap: nowrap;
+    
+}
+.inscription
+{
+    background-color: #fff;
+     border: 1px solid rgb(189, 199,216);
+     border-radius: 5px;
+     font-weight: 400;
+     font-size: 18px ;
+     outline-color: rgb(77, 144,254);
+     padding-bottom: 8px;
+     padding-top: 8px;
+     padding-left: 10px ;
+     padding-right: 10px;
+     margin: 6px;
+     margin-left: -5px;
+
+}
+.bouton
+{
+    background-color: #f7a610;
+    height: 50px;
+    width: 377px;
+    color: #fff; 
+    border: 1px solid darkblue;
+    border-radius: 2px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.bla1
+{
+    text-align: center;
+}
+.total
+{   width: 1000px;
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.bloc-g
+{
+    text-align: center;
+    background-color: darkgrey;
+}
+.bloc-d
+{
+    background-color: rgb(25, 24, 39);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.back
+{
+    background-image: url(back.jpg);
+}
+footer
+    {
+        margin: 0;
+        padding: 0;
+        height: 180px;
+        display: block;
+        justify-content: flex-end;
+        background-image: url(3.png);
+        margin-top: 100px;
+        padding: 20px;
+        color: #fff;
+    }
+    .bla6
+    {
+        text-align: center;
+    }
+    .total1
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    .ph
+    {
+        border: solid 3px  #f7a610;
+    border-radius: 280px 280px;
+    }
+    @media screen and (max-width:1200px) 
+    {
+        .lien 
+        {
+             margin: auto;
+            width: 100%;
+            padding: 0px;
+        }
+        .total1
+        {
+            margin: auto;
+            text-align: center;
+        }
+        
+
+    }
+    @media screen and (max-width:750px)
+    {
+      .lien 
+      { 
+        margin: auto;
+      width: 100%;
+      padding: 0px;
+      }
+      .total1
+        {
+            margin: auto;
+            text-align: center;
+        }
+        .logo 
+        {
+            display: none;
+        }
+        .connecter
+        {
+            display: none;
+        }
+        .total
+        {
+            margin: auto;
+            width: 40%;
+        margin-left:32px;
+        }
+       
+
+
+    }
